@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->     
+  <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Space+Grotesk">
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    p , input, button{
+      font-family: 'Space Grotesk', serif;
+    }
+
+    input {
+      display:flex;
+      margin-top: 2px;
+      border: 1px solid grey;
+      border-radius: 10px;
+      background: white; 
+      height:40px;
+      width:100%;
+      padding:0px;
+
+      text-align: center;
+      color: gray;
+    }
+
+    button {
+      display:flex;
+      border-radius: 12px;
+      background: black; 
+      height: 50px;
+      width:100%;
+      padding:0px;
+
+    
+
+
+      font-size: 18px;
+      color: white;
+    }
+
+  </style>
+  <link rel= "stylesheet" href="stylesheet.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="firstBox">
+    </div>
+    <div id="cardImgWrapper">
+      <div class="cards" id="cardFrontDiv">
+        <img class="card-content" src="images\card-logo.svg" id="cardLogo">
+        <p id="cardNum" class="card-content">0000 0000 0000 0000</p>
+        <p id="personName" class="card-content">Jane Appleseed</p>
+        <p id="expDate" class="card-content">00/00</p>
+      </div>
+      <div class="cards" id="cardBackDiv">
+        <p id="cvcNum" class="card-content">000</p>
+      </div>
+    </div>
+    <div id="secondBox">
+      <div id="form-wrapper">
+        <p id="cardholderName" class="titles">Cardholder Name</p>
+        <input type="text" placeholder= "e.g. Jane Appleseed" id="cardholderNameInput">
+
+        <p id="cardNumber" class="titles">Card Number</p>
+        <input type="text" placeholder="e.g. 1234 5678 9123 0000" id="cardNumberInput" maxlength="16">
+
+        <div id="dateCVCWrapper">
+
+          <div id="expFormWrapper">
+            <p id="expdateTitle" class="titles">Exp. Date (MM/YY)</p>
+            <div id="expInputWrapper">
+              <input class="MMYYinput" placeholder="MM" id="MMinput" maxlength="2">
+              <input class="MMYYinput" placeholder="YY" id="YYinput" maxlength="2">
+            </div>
+          </div>
+
+          <div id="cvcFormWrapper">
+            <p id="cvcTitle" class="titles">CVC</p>
+            <input id="CVCinput" placeholder="e.g. 123" maxlength="3">
+          </div>
+
+        </div>
+
+        <button id="confirmFormButton">
+          <p id="confirmButtonText">Confirm</p>
+        </button>
+
+        </button>
+      </div>
+
+
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  0000 0000 0000 0000
+  Jane Appleseed
+  00/00
+
+  000
+
+  Cardholder Name
+  e.g. Jane Appleseed
+
+  Card Number
+  e.g. 1234 5678 9123 0000
+
+  Exp. Date (MM/YY)
+  MM
+  YY
+
+  CVC
+  e.g. 123
+
+  Confirm
+
+  <!-- Completed state start -->
+
+  Thank you!
+  We've added your card details
+  Continue
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+<script src="script.js"></script>
+</body>
+</html>

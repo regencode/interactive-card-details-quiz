@@ -1,0 +1,220 @@
+@import url('images/SpaceGrotesk-VariableFont_wght.ttf');
+
+body {
+
+    background-color: gray;
+}
+
+
+
+@media only screen and (min-width: 1440px){
+
+    #wrapper {
+
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 30px;
+        margin-bottom: auto;
+
+        height: fit-content;
+        width: 1200px;
+        
+    }
+
+    #firstBox {
+        display: block;
+        width: 32%;
+        height: 800px;
+        background-image: url("images/bg-main-desktop.png");
+
+    }
+
+
+    #secondBox {
+        display: block;
+        width: 68%;
+        height: 800px;
+        background-color: white;
+
+    }
+
+    
+}
+
+@media only screen and (min-width: 375px) and (max-width: 1439px){
+
+    #wrapper {
+
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 30px;
+        margin-bottom: auto;
+    
+        height: 700px;
+        width: 375px;
+    }
+
+    #firstBox {
+        display: block;
+        width: 100%;
+        min-height: 30%;
+        background-image: url("images/bg-main-mobile.png");
+
+    }
+
+    #secondBox {
+        display: block;
+        width: 100%;
+        height: 70%;
+        background-color: white;
+
+    }
+
+
+
+
+}
+
+
+
+#cardImgWrapper {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    margin-left: 75px;
+    margin-top: 150px;
+    margin-bottom: auto;
+
+}
+
+.cards {
+    background-repeat: no-repeat;
+    display: block;
+    width:447px;
+    height:244px;
+}
+
+.card-content {
+    display:block;
+    position: absolute;
+    color: white;
+}
+
+#cardFrontDiv {
+    background-image: url("images/bg-card-front.png");
+    background-repeat: no-repeat;
+    display: block;
+    box-shadow: 10px 10px 50px rgba(128, 128, 128, 0.81);
+
+}
+
+#cardBackDiv {
+    background-image: url("images/bg-card-back.png");
+    bottom: 0;
+    margin-left: 125px;
+    margin-top: 20px;
+    box-shadow: 10px 10px 50px rgba(128, 128, 128, 0.814);
+}
+
+#cardFrontImg {
+    width: 300px;
+    height: auto;
+}
+
+#cardLogo {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+#cardNum {
+    margin-top: 130px;
+    margin-left: 30px;
+    font-size: 35px;
+}
+
+#personName {
+    margin-top: 200px;
+    margin-left: 30px;
+}
+
+#expDate {
+    margin-top: 200px;
+    margin-left: 370px;
+}
+
+#cardBackImg {
+
+    width: 300px;
+    height: auto;
+}
+
+#cvcNum {
+    margin-top: 110px;
+    margin-left: 355px;
+}
+
+
+
+
+#form-wrapper{
+    margin-left: 45%;
+    margin-right: auto;
+    margin-top: 32%;
+    margin-bottom: auto;
+    width: 40%;
+    height: 50%;
+
+}
+
+.titles{
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+#dateCVCWrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#expFormWrapper{
+    width: 50%;
+    margin-right: 15px;
+}
+
+#expInputWrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.MMYYinput {
+    width: 70%;
+    margin-right: 10px;
+
+}
+
+#cvcFormWrapper {
+    width: 55%;
+
+}
+
+#CVCinput {
+    width: 100%
+}
+
+
+
+#confirmFormButton{
+    margin-top: 15px;
+}
+
+#confirmButtonText {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
